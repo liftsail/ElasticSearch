@@ -30,7 +30,7 @@ public class EsDemo02 {
     @Test
     public void createDoc() throws IOException {
         //准备数据
-        SmsLogs smsLogs = new SmsLogs(new Date(), new Date(), 201512099, "18735427899", "大少爷公司", "注册成功", (byte) 0, 1, "山西省", "10.70.20.1", 60, 99);
+        SmsLogs smsLogs = new SmsLogs(new Date(), new Date(), "201512099", "18735427899", "大少爷公司", "注册成功", 0, 1, "山西省", "10.70.20.1", 60, 99);
         String logs = mapper.writeValueAsString(smsLogs);
 
         //创建执行对象
